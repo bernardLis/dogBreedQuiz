@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="afghan_hound">
+        <item>@drawable/afgan_hound_1</item>
+        <item>@drawable/afgan_hound_2</item>
+        <item>@drawable/afgan_hound_3</item>
+        <item>@drawable/afgan_hound_4</item>
+        <item>@drawable/afgan_hound_5</item>
+        <item>@drawable/afgan_hound_6</item>
+        <item>@drawable/afgan_hound_7</item>
+
+    </integer-array>
+
+    <integer-array name="irish_terrier">
+        <item>@drawable/irish_terrier_1</item>
+        <item>@drawable/irish_terrier_2</item>
+        <item>@drawable/irish_terrier_3</item>
+        <item>@drawable/irish_terrier_4</item>
+        <item>@drawable/irish_terrier_5</item>
+        <item>@drawable/irish_terrier_6</item>
+        <item>@drawable/irish_terrier_7</item>
+
+    </integer-array>
+
+
+
+</resources>
