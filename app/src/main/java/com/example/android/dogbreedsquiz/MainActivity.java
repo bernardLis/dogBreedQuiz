@@ -24,9 +24,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void startGame(View view) {
 
         // Create a new list of dogs
+
         List<Dog> dogs = new ArrayList<>();
+
         // Create new dogs to add to the list
         Dog afgan_houd_1 = new Dog(R.drawable.afgan_hound_1, 1, "afgan_houd");
         Dog afgan_houd_2 = new Dog(R.drawable.afgan_hound_2, 2, "afgan_houd");
@@ -36,7 +41,18 @@ public class MainActivity extends AppCompatActivity {
         Dog afgan_houd_6 = new Dog(R.drawable.afgan_hound_6, 6, "afgan_houd");
         Dog afgan_houd_7 = new Dog(R.drawable.afgan_hound_7, 7, "afgan_houd");
 
+        Dog irish_terrier_1 = new Dog(R.drawable.irish_terrier_1, 8, "irish_terrier");
+        Dog irish_terrier_2 = new Dog(R.drawable.irish_terrier_2, 9, "irish_terrier");
+        Dog irish_terrier_3 = new Dog(R.drawable.irish_terrier_3, 10, "irish_terrier");
+        Dog irish_terrier_4 = new Dog(R.drawable.irish_terrier_4, 11, "irish_terrier");
+        Dog irish_terrier_5 = new Dog(R.drawable.irish_terrier_5, 12, "irish_terrier");
+        Dog irish_terrier_6 = new Dog(R.drawable.irish_terrier_6, 13, "irish_terrier");
+        Dog irish_terrier_7 = new Dog(R.drawable.irish_terrier_7, 14, "irish_terrier");
+
+
+
         // Create and add further new dogs as needed
+
         dogs.add(afgan_houd_1);
         dogs.add(afgan_houd_2);
         dogs.add(afgan_houd_3);
@@ -44,17 +60,32 @@ public class MainActivity extends AppCompatActivity {
         dogs.add(afgan_houd_5);
         dogs.add(afgan_houd_6);
         dogs.add(afgan_houd_7);
+        dogs.add(irish_terrier_1);
+        dogs.add(irish_terrier_2);
+        dogs.add(irish_terrier_3);
+        dogs.add(irish_terrier_4);
+        dogs.add(irish_terrier_5);
+        dogs.add(irish_terrier_6);
+        dogs.add(irish_terrier_7);
+
 
         // Pass in a random number in place of 0, between 0 and the .size() of the array -1
+
+        Collections.shuffle(dogs);
+
         String currentDogBreed = dogs.get(3).getDogBreed();
         int currentDogImageId = dogs.get(3).getDogImageId();
 
-        public void nextDoggoClick(View view) {
+        Log.v("MainActivity", currentDogBreed);
 
         ImageView doggoImageView = (ImageView) findViewById(R.id.doggoImageView);
 
 
+        doggoImageView.setImageResource(currentDogImageId);
+
+
     }
+
 
     public void displayPoints(int points) {
         TextView scoreView = (TextView) findViewById(R.id.pointsNumber);
@@ -64,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
 
 }
 
-}
 
 
 

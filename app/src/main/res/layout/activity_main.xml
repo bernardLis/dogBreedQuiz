@@ -35,20 +35,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next Doggo"
-        android:onClick="nextDoggoClick"/>
+        android:text="Start Game"
+        android:onClick="startGame"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Afgan Hound"
-        android:onClick="afganHoundButtonClick"/>
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Irish Terrier"
-        android:onClick="irishTerrierButtonClick"/>
+        />
 
 
 
